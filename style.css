@@ -7,12 +7,7 @@ body {
 
 .boss-container {
   margin: 0 auto;
-  width: 90%;
-}
-
-.body-container {
-  margin: 0 auto;
-  width: 441px;
+  width: 95%;
 }
 
 /* rozpoczęcie nava */
@@ -24,11 +19,14 @@ body {
   color: #ffffff;
   position: sticky;
   top: 0px;
+  z-index: 9999;
 }
 .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 95%;
+  height: 100%;
 }
 
 .my-company-element {
@@ -67,7 +65,7 @@ body {
 }
 header img {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   object-fit: cover;
 }
 .container-position {
@@ -81,10 +79,10 @@ header img {
 .position-text {
   height: 100%;
   margin: 0 auto;
-  width: 90%;
+  width: 95%;
   display: flex;
   justify-content: center;
-  gap: 60px;
+  gap: 50px;
   flex-direction: column;
   color: #ffffff;
 }
@@ -92,13 +90,13 @@ header img {
 .text-quality-product {
   font-style: normal;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 31px;
   line-height: 42px;
 }
 .text-line {
   font-style: normal;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 21px;
 }
 
@@ -107,7 +105,7 @@ header img {
   font-weight: 700;
   font-size: 18px;
   line-height: 21px;
-  width: 200px;
+  width: 150px;
   height: 40px;
   border: 3px solid white;
   display: flex;
@@ -127,6 +125,8 @@ header img {
 /* zaczęcie sekcji z specjalistami */
 
 .specialist-section {
+  padding-top: 50px;
+  padding-bottom: 50px;
   width: 100%;
   height: 100%;
   background-color: #f1f1f1;
@@ -137,12 +137,12 @@ header img {
 .title-section-specialist {
   font-style: normal;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 33px;
   line-height: 42px;
-  padding: 8% 0%;
+  margin-bottom: 10%;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   height: 69px;
   color: #152d41;
 }
@@ -151,23 +151,21 @@ header img {
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  background-size: cover;
+  object-fit: cover;
 }
 
 .container-specialist {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 60px 60px;
+  gap: 60px;
 }
 .container-specialist-under {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 60px 60px;
+  gap: 60px;
   margin-top: 100px;
-  padding-bottom: 20%;
-  height: 20%;
 }
 
 .text-specialist-direction {
@@ -177,7 +175,7 @@ header img {
   gap: 20px;
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 21px;
 }
 
@@ -186,21 +184,22 @@ header img {
 .size-color-service-section {
   background-color: #405d78;
   width: 100%;
-  padding: 15% 0%;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .tite-service-section {
   font-style: normal;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 21px;
   line-height: 42px;
-  margin-bottom: 15%;
+  margin-bottom: 10%;
   color: #ffffff;
 }
 .flex-box-service-section {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
   width: 100%;
   height: 100%;
   gap: 35px;
@@ -211,18 +210,15 @@ header img {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 400px;
-  height: 400px;
+  width: 320px;
+  height: 320px;
   background-color: #f1f1f1;
   position: relative;
   cursor: pointer;
-  transition: all linear 0.5s;
 }
 
-.box:hover {
-  transform: scale(1.05);
-}
 .special-box {
+  display: flex;
   position: absolute;
   top: -11px;
   left: -11px;
@@ -244,7 +240,7 @@ header img {
   color: #ffffff;
   font-style: normal;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 21px;
 }
 
@@ -260,60 +256,99 @@ header img {
 
   gap: 18px;
 }
+.fa-brands {
+  color: #ffffff;
+}
 
 @media (min-width: 768px) {
-  .boss-container {
-    margin: 0 auto;
-    width: 80%;
-  }
+  .boss-container,
   .position-text {
-    margin: 0 auto;
-    width: 80%;
+    width: 90%;
   }
-  .body-container {
-    max-width: 720px;
+  .text-quality-product {
+    width: 70%;
+    font-size: 34px;
   }
-
-  .nav-list {
-    display: flex;
+  .text-line {
+    font-size: 18px;
+  }
+  .button-ofert {
+    font-size: 18px;
+    width: 160px;
+    height: 45px;
+  }
+  .title-section-specialist {
+    font-size: 36px;
+  }
+  .tite-service-section {
+    font-size: 26px;
   }
   .container-specialist {
     flex-direction: row;
   }
+  .specialist-section {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
 
   .container-specialist-under {
     flex-direction: row-reverse;
+  }
+  .container-specialist-under {
+    text-align: end;
+  }
+  .footer-text {
+    font-size: 18px;
+  }
+  .nav-list {
+    display: flex;
   }
 }
 
 @media (min-width: 1024px) {
-  .boss-container {
-    margin: 0 auto;
-    width: 70%;
-  }
+  .boss-container,
   .position-text {
-    margin: 0 auto;
-    width: 70%;
-  }
-  .body-container {
-    max-width: 960px;
-  }
-  .container-specialist {
-    flex-direction: row;
+    width: 960px;
   }
 
+  .title-section-specialist {
+    justify-content: left;
+  }
   .container-specialist-under {
     gap: 60px;
-    flex-direction: row-reverse;
+  }
+  .text-specialist-direction {
+    font-size: 18px;
+  }
+  .text-quality-product {
+    width: 60%;
+    font-size: 36px;
   }
 
-  .flex-box-service-section {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+  .tite-service-section {
+    margin-bottom: 7%;
   }
-
   .box {
-    max-width: 320px;
+    width: 290px;
+    height: 290px;
+    font-size: 24px;
+    transition: all linear 0.5s;
+  }
+  .size-bonus-text {
+    font-size: 18px;
+  }
+  .box:hover {
+    transform: scale(1.05);
+  }
+  .footer-size-color {
+    height: 71px;
+  }
+  .container-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .tite-service-section {
+    font-size: 36px;
   }
 }
